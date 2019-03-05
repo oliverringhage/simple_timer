@@ -3,7 +3,6 @@ import re
 import sys
 
 total_time = str(sys.argv[1])
-#total_time = input("How long to wait: ")
 if(re.search("^[\d]{1,3}m[\d]{1,2}s$", total_time)):
     mins = int(total_time[:total_time.find('m')])
     secs = int(total_time[total_time.find('m') + 1 :total_time.find('s')])
